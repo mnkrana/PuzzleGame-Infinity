@@ -601,63 +601,81 @@ Tilemap:
   m_GameObject: {fileID: 1036027227}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -2, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 2
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
   - first: {x: -1, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
   - first: {x: 0, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
+      m_TileIndex: 3
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
   - first: {x: 1, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
   - first: {x: 2, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 2
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 64bc4e4b6b44946a9b3349c25ab6c1c9, type: 2}
+    m_Data: {fileID: 11400000, guid: 8c1a3909d98b94461afffa18513c688a, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: edc525365262e463ebd7b8afd83afc06, type: 2}
-  - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: 4f6b42623136e492d89c6f8f7fa6efff, type: 2}
+    m_Data: {fileID: 11400000, guid: 714ddce62d7854b5f895e4209745015a, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 462be541e126648799d4313156779844, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 430d4312b30c14a38aab18a8901e8261, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 3851dec9e0f574082980aacdf83dced1, type: 2}
   m_TileSpriteArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 1f203cd3586724fd1ad0830364920850, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 12ed879347eb1438fba1dbc691595916, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 1b6dbe33b24994484a5d62562ec6fc55, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: decce02fdb6564ea4becadaca33f4ab2, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 81ec0be902cbf40e4a2a7ed6d56d3e4d, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: 21300000, guid: 683f0a4bbc3014464887ce8a7360fc61, type: 3}
+    m_Data: {fileID: 21300000, guid: 07a7a154c20904fe3bccc7121efde23b, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 3
+  - m_RefCount: 5
     m_Data:
       e00: 1
       e01: 0
@@ -675,7 +693,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 1
+  - m_RefCount: 0
     m_Data:
       e00: 0.5
       e01: -0.8660254
@@ -694,7 +712,11 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 4
+  - m_RefCount: 0
+    m_Data: {r: 0.9364585, g: 0.5612549, b: 0.62445235, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 0.72142684, g: 0.38351354, b: 0.42304927, a: 1}
+  - m_RefCount: 5
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -786,6 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileMap: {fileID: 1036027230}
+  riverSO: {fileID: 11400000, guid: 47a843d760d3649c8b4c79e46f33782a, type: 2}
 --- !u!4 &1592876363
 Transform:
   m_ObjectHideFlags: 0

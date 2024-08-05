@@ -8,6 +8,9 @@ namespace Puzzle
         [SerializeField]
         private Tilemap tileMap;
 
+        [SerializeField]
+        private RiverSO riverSO;
+
         void Update()
         {
             if (Input.GetMouseButtonDown(0))
@@ -16,14 +19,13 @@ namespace Puzzle
                 var hit = Physics2D.Raycast(worldPoint, Vector2.down);
                 if (hit)
                 {
-                    Debug.Log($"Hit something {hit.collider.gameObject.name}");
                     var tpos = tileMap.WorldToCell(hit.point);
                     var tile = tileMap.GetTile(tpos);
-                    Debug.Log($"Tile name {tile}");
-                }
-                else
-                {
-                    Debug.Log("Hit Nothing");
+                    var (found, nextTile) = riverSO.GetNextTile(tile.name);
+                    if (found)
+                    {
+                        tileMap.SetTile(tpos, nextTile);
+                    }
                 }
             }
         }
